@@ -77,6 +77,12 @@ abstract class Floater //Do NOT modify the Floater class! Make changes in the Sp
     {
       vertex(xCorners[nI], yCorners[nI]);
     }
+    xCorners [0] = -8;
+    yCorners [0] = -8;
+    xCorners [1] = 16;
+    yCorners [1] = 0;
+    xCorners [2] = -8;
+    yCorners [2] = 8;
     endShape(CLOSE);
 
     //"unrotate" and "untranslate" in reverse order
