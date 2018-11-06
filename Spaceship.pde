@@ -1,14 +1,5 @@
 class Spaceship extends Floater  
 {   
-	/*
-	  protected int corners;  //the number of corners, a triangular floater has 3   
-  protected int[] xCorners;   
-  protected int[] yCorners;   
-  protected int myColor;   
-  protected double myCenterX, myCenterY; //holds center coordinates   
-  protected double myDirectionX, myDirectionY; //holds x and y coordinates of the vector for direction of travel   
-  protected double myPointDirection;
-  */
 	public Spaceship(){
 		corners = 3;
 		xCorners = new int[corners];
@@ -19,7 +10,7 @@ class Spaceship extends Floater
 		yCorners [1] = 0;
 		xCorners [2] = -8;
 		yCorners [2] = 8;
-		myColor = ((int)(Math.random()*256));
+		myColor = color(244, 204, 255);
 		myCenterX = width/2;
 		myCenterY = height/2;
 		myDirectionX = 0;
@@ -36,4 +27,5 @@ class Spaceship extends Floater
 	public double getDirectionY(){return myDirectionY;}   
 	public void setPointDirection(int degrees){myPointDirection = degrees;}   
 	public double getPointDirection(){return myPointDirection;}
+	
 }
