@@ -28,6 +28,7 @@ class Asteroid extends Floater
 		myDirectionX = 0;
 		myDirectionY = 0;
 		myPointDirection = 0;
+		mySpinSpeed = (int)(Math.random()*50)-25;
 	}
 	public void move()
 	{
