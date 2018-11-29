@@ -38,9 +38,9 @@ public void draw()
 			numAsteroid--;
 		}
 		else{
-			rocks.get(i).move();		
+			rocks.get(i).move();
+			rocks.get(i).show();
 		}
-		rocks.get(i).show();
 	}
 }
 
