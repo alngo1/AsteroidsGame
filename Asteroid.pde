@@ -13,22 +13,28 @@ class Asteroid extends Floater
 	public double getPointDirection(){return myPointDirection;}
 	public Asteroid()
 	{
-		corners = 3;
+		corners = 6;
 		xCorners = new int[corners];
 		yCorners = new int[corners];
 		xCorners [0] = -8;
 		yCorners [0] = -8;
 		xCorners [1] = 16;
 		yCorners [1] = 0;
-		xCorners [2] = -8;
-		yCorners [2] = 8;
+		xCorners [2] = -6;
+		yCorners [2] = 6;
+		xCorners [3] = -21;
+		yCorners [3] = -21;
+		xCorners [4] = 10;
+		yCorners [4] = 17;
+		xCorners [5] = -20;
+		yCorners [5] = 36;
 		myColor = color(244, 204, 224);
 		myCenterX = (int)(Math.random()*501);
 		myCenterY = (int)(Math.random()*501);
 		myDirectionX = 0;
 		myDirectionY = 0;
 		myPointDirection = 0;
-		mySpinSpeed = (int)(Math.random()*50)-25;
+		mySpinSpeed = (int)(Math.random()*25)+1;
 	}
 	public void move()
 	{
